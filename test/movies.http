@@ -1,0 +1,54 @@
+POST http://localhost:5000/movies/
+Content-Type: application/json
+
+{
+  "title": "asasddda",
+  "description": "description",
+  "trailer": "trailer",
+  "year": 1222,
+  "rating": 2,
+  "genre_id": 4,
+  "director_id": 3
+}
+
+###
+
+GET http://localhost:5000/movies/?director_id=2&year=2015
+Accept: application/json
+
+###
+
+GET http://localhost:5000/movies/2
+Accept: application/json
+
+###
+
+PUT http://localhost:5000/movies/21
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "Das_fres",
+  "description": "desc_ription",
+  "trailer": "tra_iler",
+  "year": 1232,
+  "rating": 1,
+  "genre_id": 2,
+  "director_id": 3
+}
+###
+
+DELETE http://localhost:5000/movies/22
+Accept: application/json
+
+###
+
+PATCH http://localhost:5000/movies/23
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "STRASHNO"
+}
+
+###
